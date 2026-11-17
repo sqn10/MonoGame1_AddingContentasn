@@ -11,7 +11,13 @@ namespace MonoGame1_AddingContent
 
         Rectangle window;
 
-        Texture2D dinoTexture;
+        Texture2D bgTexture;
+        Texture2D bombTexture;
+        Texture2D laserTexture;
+        Texture2D planeTexture;
+        Texture2D skullTexture;
+        Texture2D ufoTexture;
+        Texture2D houseTexture;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -41,7 +47,13 @@ namespace MonoGame1_AddingContent
 
             // TODO: use this.Content to load your game content here
 
-            dinoTexture = Content.Load<Texture2D>("dino");
+            bgTexture = Content.Load<Texture2D>("bg");
+            bombTexture = Content.Load<Texture2D>("bomb");
+            laserTexture = Content.Load<Texture2D>("laser");
+            planeTexture = Content.Load<Texture2D>("plane");
+            skullTexture = Content.Load<Texture2D>("skull");
+            ufoTexture = Content.Load<Texture2D>("ufo");
+            houseTexture = Content.Load<Texture2D>("house");
         }
 
         protected override void Update(GameTime gameTime)
@@ -56,14 +68,24 @@ namespace MonoGame1_AddingContent
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.DarkOliveGreen);
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
 
             _spriteBatch.Begin();
 
-            _spriteBatch.Draw(dinoTexture, new Vector2(10, 10), Color.White);
-            _spriteBatch.Draw(dinoTexture, new Vector2(500, 10), Color.Red);
+            _spriteBatch.Draw(bgTexture, new Vector2(0, 0), Color.White);
+
+            _spriteBatch.Draw(ufoTexture, new Vector2(300, 120), Color.White);
+            _spriteBatch.Draw(bombTexture, new Vector2(300, 150), Color.White);
+
+            _spriteBatch.Draw(planeTexture, new Vector2(150, 50), Color.White);
+            _spriteBatch.Draw(laserTexture, new Vector2(200, 70), Color.White);
+
+            _spriteBatch.Draw(houseTexture, new Vector2(10, 350), Color.White);
+            _spriteBatch.Draw(houseTexture, new Vector2(200, 350), Color.White);
+            _spriteBatch.Draw(houseTexture, new Vector2(400, 350), Color.White);
+            _spriteBatch.Draw(houseTexture, new Vector2(900, 350), Color.White);
 
             _spriteBatch.End();
 
