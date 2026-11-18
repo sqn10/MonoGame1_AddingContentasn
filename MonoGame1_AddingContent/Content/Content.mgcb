@@ -39,6 +39,19 @@
 /processorParam:Version=3.8.6.1
 /build:bomb.png
 
+#begin fire.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/processorParam:Version=3.8.6.1
+/build:fire.gif
+
 #begin house.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -78,6 +91,19 @@
 /processorParam:Version=3.8.6.1
 /build:plane.png
 
+#begin skull.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/processorParam:Version=3.8.6.1
+/build:skull.png
+
 #begin ufo.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -90,17 +116,4 @@
 /processorParam:TextureFormat=Color
 /processorParam:Version=3.8.6.1
 /build:ufo.png
-
-#begin X:/My Drive/Images/monogame/skull.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/processorParam:Version=3.8.6.1
-/build:X:/My Drive/Images/monogame/skull.png;skull.png
 

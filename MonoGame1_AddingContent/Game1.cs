@@ -18,6 +18,7 @@ namespace MonoGame1_AddingContent
         Texture2D skullTexture;
         Texture2D ufoTexture;
         Texture2D houseTexture;
+        Texture2D fireTexture;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -54,6 +55,7 @@ namespace MonoGame1_AddingContent
             skullTexture = Content.Load<Texture2D>("skull");
             ufoTexture = Content.Load<Texture2D>("ufo");
             houseTexture = Content.Load<Texture2D>("house");
+            fireTexture = Content.Load<Texture2D>("fire");
         }
 
         protected override void Update(GameTime gameTime)
@@ -82,10 +84,9 @@ namespace MonoGame1_AddingContent
             _spriteBatch.Draw(planeTexture, new Vector2(150, 50), Color.White);
             _spriteBatch.Draw(laserTexture, new Vector2(200, 70), Color.White);
 
-            _spriteBatch.Draw(houseTexture, new Vector2(10, 350), Color.White);
-            _spriteBatch.Draw(houseTexture, new Vector2(200, 350), Color.White);
-            _spriteBatch.Draw(houseTexture, new Vector2(400, 350), Color.White);
-            _spriteBatch.Draw(houseTexture, new Vector2(900, 350), Color.White);
+            _spriteBatch.Draw(fireTexture, new Vector2(10, 500), Color.White);
+            _spriteBatch.Draw(houseTexture, new Vector2(290, 350), Color.White);
+            _spriteBatch.Draw(fireTexture, new Vector2(450, 500), Color.White);
 
             _spriteBatch.End();
 
